@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <style>
+        body {
+            background-image: url('back.png');
+            margin: 0 auto;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            margin-top: 50px;
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.71);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.71);
+            text-align: center;
+        }
+
+        .info {
+            margin-top: 50px;
+        }
+
+        .records {
+            background-color: seashell;
+            font-size: x-large;
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <table id="table" width="500" height="500"></table>
+        <div class="info">
+            <h1 id="counter"></h1>
+            <h1 id="timer"></h1>
+        </div>
+        <table class="records" id="records" width=600>
+            <tr>
+                <td width=20%> СЧЁТ </td>
+                <td width=20%> ВРЕМЯ </td>
+                <td> ИМЯ </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+<script src="game.js"></script>
+</html>
